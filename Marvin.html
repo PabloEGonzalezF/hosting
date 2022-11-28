@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>EEST Proyects</title>
-        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="style2.css">
-    </head>
-    <body>
-        <iframe src="Informe de la Araña.pdf" style="width: 100%;height: 700px;"frameborder="0"></iframe>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EEST Proyects</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style3.css">
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Proyecto Nº1</h1>
+            <h2>Robot Cuadrupedo</h2>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">¿Que es un robot cuadrupedo?</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/WhatsApp Image 2022-11-26 at 17.51.24.jpeg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span></span>Descripcion</h3>
+                    <p>Es un robot cuadrúpedo armado con piezas 3D. Funciona a través de una fuente de alimentación que le proporciona energía a todo el resto del circuito del robot, esta fuente de poder son 2 pilas 18650 recargables de un total de 7,3 volts, van conectadas a un regulador de voltaje que se encarga de disminuir su tension a 5,1 volts. Esto debido a que cada pata del cuadrúpedo cuenta con 3 servos que son los que hacen que este se mueva, sin embargo los servos funcionan entre 4,8 y 6 volts, de ahí la necesidad de que el regulador de voltaje achique la tension de las pilas a 5,1 volts. 
+                        Este robot cuadrúpedo cuenta con un módulo bluetooth HC-05 el cual es el encargado de (mediante vía bluetooth) conectar el robot con una aplicación en el celular la cual funcionara como control remoto. Todo esto está conectado a un arduino nano mediante unos pines y soldado al circuito electrico que debera ser diseñado. 
+                    </p>
+                    <h3><span></span>Objetivo</h3>
+                    <p>El objetivo principal de este proyecto es que pueda moverse en diferentes direcciones (adelante, atrás, izquierda y derecha) ya que al tener 4 patas lo ideal sería que al menos pudiera realizar esos movimientos.
+                        Los objetivos secundarios son: que pueda realizar más de los movimientos antes mencionados, como por ejemplo moverse en diagonal o agacharse. También es un objetivo secundario que pueda mover la mayoría de sus patas al mismo tiempo, este es el objetivo secundario de mayor complejidad ya que requiere un aumento de voltaje necesario y ver cuántos servos se van a mover.
+                        Objetivos de los involucrados al realizar este proyecto: poder mejorar las capacidades técnicas y adquirir mayor experiencia ya sea en programación, diseño de pcb o montaje al trabajar en este proyecto.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                
+                <div class="contenido-textos">
+                    <h3><span></span>Esquema de los circuitos de la araña completos</h3>
+                    <h3><span></span>Lista de Materiales: (Precios aproximados)</h3>
+                    <a class="list" href="#">-Servos sg90: Cantidad = 12/precio: 3672</a>
+                    <a class="list" href="#">-PCA 9685: cantidad=1/precio: 1000</a>
+                    <a class="list" href="#">-Pilas recargables 18650: Cantidad=2/precio: 842</a>
+                    <a class="list" href="#">-Porta pilas: cantidad=1/precio: 388</a>
+                    <a class="list" href="#">-Regulador de voltaje: cantidad=1/precio: 449</a>
+                    <a class="list" href="#">-Arduino nano: cantidad=1/precio: 616</a>
+                    <a class="list" href="#">-Modulo bluetooth HC-05/06: cantidad=1/precio: 790</a>
+                    <a class="list" href="#">-Piezas 3D para el cuadrúpedo: cantidad=6/ precio: 950</a>
+                    <a class="list" href="#">-Placa de cobre perforada 8cmx7 cm: cantidad=1/precio: 217</a>
+                    <a class="list" href="#">-Pines macho/hembra: precio: 97</a>
+                    <a class="list" href="#">-Cables macho/hembra: precio: 250</a>
+                    <a class="list" href="#">-Interruptor: cantidad=1/precio: 115</a>
+                    <a class="list" href="#">-dos resistencias: una de 1k OHM y  otra de 2k2 OHM</a>
+                    <a class="list" href="#">-Un capacitor de 100mF</a>
+                    <img src="img/Captura de pantalla (978).png" alt="" class="imagen-about-us">
+                </div>
+                <img src="img/Captura de pantalla (976).png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <h3><span></span>PCA9685: </h3>
+                    <p>Es un integrado que tiene como funcionalidad controlar los movimientos de los servos y facilitar la programación de los mismos, además cuenta con varios pines los cuales son de mucha utilidad en caso de que hubiera varios servos que conectar. Cuenta con una bornera para la entrada de la alimentación, un capacitor para almacenar energía de más y también tiene los pies de salida de la alimentación  y de dato SCL y SDA que irán al arduino. 
+                    </p>
+                </div>
+                <img src="img/Captura de pantalla (981).png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <h3><span></span>Arduino: </h3>
+                    <p>Es el microcontrolador encargado de regular las funciones de los componentes y en el que lleva la programacion, cuenta con 15 pines de cada lado, de un lado tiene pienes digitales y de otro lado pines analogicos, ademas tiene pines PWM. 
+                    </p>
+                </div>
+                <img src="img/Captura de pantalla (988).png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+        <video class="video" autoplay muted loop >
+            <source src="img/VID-20221115-WA0003.mp4" type="video/mp4" >
+        </video>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <h3><span></span>Bitacora del Capitan</h3>
+                    <p><h5 class="list" href="#">16/4/2022
+                        finalmente optamos por un Arduino nano y un bluetooth ya que con el bluetooth la conexión seria mas estable que con el wemos. En la programación se lograron avances realizando un código prototipo improvisado  para ver si funcionaban los servos (estos funcionaron).
+                    </h5>
+                    <h5 class="list" href="#">Avances desde el 21/4/2022 hasta 10/5/2022
+                        Luego de varios cambios el esquematico del PCB finalmente se termino. Se tuvieron que crear huellas y footprints para el StepDown y PCA9685 con las medidas de los datasheets.Por otra parte, pudimos calibrar los servos y ver los sentidos de los grados que ocupaba cada servo. Mejoramos el código prototipo y la araña funciono aunque no reconoce ningun arduino nano y el programa aun no cuenta con las librerias del PCA este será el próximo paso a realizar.
+                    </h5>
+                    <h5 class="list" href="#">Avances desde el 10/4/2022 hasta 20/4/2022
+                        Terminamos el PCB sin mayores complicaciones, agregamos resistencias para que el bluetooth no se queme y un capacitor de 100mf a la entrada de la alimentación del arduino. También en caso de no poder usar el controlador de servos se hizo un PCB sin este.
+                    </h5>
+                    <h5 class="list" href="#">Avances hasta el 1/6/2022 
+                        Imprimimos el PCB y terminamos la placa física, (aun falta soldar los componentes), el nuevo problema que surgió es que el chasis de la araña es muy chico por lo que vamos a tener que agrandarlo e imprimirlo otra vez. Con respecto a la programación nos queda instalar la librería y termiar el código.
+                    </h5>
+                    <h5 class="list" href="#">Avances hasta el 7/6/2022
+                        Se soldaron algunos pines del PCB fisico, aun flata terminar de soldar, programar el PCA y agrandar el chasis
+                    </h5>
+                    <h5 class="list" href="#">Avances hasta el 24/6/2022
+                        se soldaron los pines restantes y se avanzo con la programacion  PCA (falta revision) y agrandar el chasis. tuvimos algunos inconvenientes con la alimentacion del PCA por lo que hicimos un puente ya que el integrado del PCA no recibia alimentacion, arreglamos las soldaduras y corregimos una pista que estaba mal en el interruptor y ya por ultimo arreglamos las pistas de dato del PCA (SCL y SDA) que estaban invertidas.    
+                    </h5> 
+                    </p>
+                    <a href="codigo fuente marvin.txt">Descarga el codigo</a>
+                </div>
+                <img src="img/campain.png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>mi mama no deja</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>no se no me acuerdo</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>TOP SECRET</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; FINISH</h2>
+    </footer>
+</body>
+
 </html>
