@@ -1,14 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>EEST Proyects</title>
-        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="style2.css">
-    </head>
-    <body>
-        <iframe src="Informe Final del Proyecto Chispitas.pdf" style="width: 100%;height: 700px;"frameborder="0"></iframe>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EEST Proyects</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style3.css">
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Proyecto Nº2</h1>
+            <h2>Robot Sumo RC-AUTONOMO</h2>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">SUMO</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/WhatsApp Image 2022-11-26 at 17.51.24.jpeg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span></span>DESCRIPCION DEL PROYECTO:</h3>
+                    <p>Es un sumo de 20x20cm que sera controlado mediante un arduino nano y contara con sensores ultrasonicos para detectar objetos.
+                        se usaran motores Apis para que cuente con mas potencia debido a que su finalidad es competir en carreras con otros sumos o autos (no se utilizara para competencia de sumo por lo que no contara con sensores infrarrojos como los que utilizan los tipicos Robot Sumo), se utilizara el driver BTS7960. finalmente todo esto estara conectado mediante un PCB que fabricaremos. El sumo sera radio controlado mediante una app del celular que se interconectara via bluetooth, para esto utilizaremos el modulo HC-SR05.                         
+                    </p>
+                    <h3><span></span>Objetivo</h3>
+                    <p>El objetivo principal de este proyecto es que pueda moverse en diferentes direcciones (adelante, atrás, izquierda y derecha) por tener 2 motores lo ideal sería que al menos pudiera realizar esos movimientos.
+                        Los objetivos secundarios son: que pueda realizar más de los movimientos antes mencionados, que sea capaz de detectar y sensar correctamente tanto la pista como a la competencia y pueda ser capaz de librar un combate digno
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                
+                <div class="contenido-textos">
+                    <h3><span></span>Esquema de los circuitos completos</h3>
+                    <h3><span></span>Lista de Materiales: (Precios aproximados)</h3>
+                    <a class="list" href="#">-Motores Apis sp6: cantidad=2/precio: 2700</a>
+                    <a class="list" href="#">-Arduino nano: cantidad=1/precio: 1500</a>
+                    <a class="list" href="#">-bluetooth: cantidad=1/precio: 700</a>
+                    <a class="list" href="#">-Sensores de ultrasonido: cantidad=2/precio: 200</a>
+                    <a class="list" href="#">-resistencias: cantidad=2/precio: 4</a>
+                    <a class="list" href="#">-Impresión 3D</a>
+                    <a class="list" href="#">-Ruedas de silicona: cantidad=2</a>
+                    <a class="list" href="#">-PCB</a>
+                    <a class="list" href="#">-Cables macho-macho y macho-hembra</a>
+                    <a class="list" href="#">-Driver (controlador de motores): cantidad=2/precio: 4500</a>
+                    <a class="list" href="#">Descargar PCB</a>
+                    <img src="img/Captura de pantalla (998).png" width="475px" height="400px" alt="" >
+                </div>
+                <img src="img/Captura de pantalla (989).png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <h3><span></span>HC-04 </h3>
+                    <p>Con 3 de estos mediante codigo el robot sera capaz de persibir parcialmente el entrono que lo rodea y realizar acciones de acuerdo a la distancia y posición del objeto detectado 
+                    </p>
+                </div>
+                <img src="img/Captura de pantalla (992).png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <h3><span></span>Arduino: </h3>
+                    <p>Es el microcontrolador encargado de regular las funciones de los componentes y en el que lleva la programacion, cuenta con 15 pines de cada lado, de un lado tiene pienes digitales y de otro lado pines analogicos, ademas tiene pines PWM. 
+                    </p>
+                </div>
+                <img src="img/Captura de pantalla (988).png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <h3><span></span>Driver Controlador de Motores BTS7905</h3>
+                    <p>Lo utilizamos para controlar los motores y enviarles los datos, se utilizan estos driver ya que puden soportar un gran cantidad de corriente y de tension (24V y 43A) que es con lo que se nesecita alimetar a los motores. la desventaja es que se requiere un driver por motor.  
+                    </p>
+                </div>
+                <img src="img/Captura de pantalla (128.).png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+        <video class="video" autoplay muted loop >
+            <source src="img/VID-20221115-WA0003.mp4" type="video/mp4" >
+        </video>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <h3><span></span>Bitacora del Capitan</h3>
+                    <p><h5 class="list" href="#">25/07/2022
+                        Avances en la placa: empezamos y terminamos el diseño del esquematico y del PCB en el mismo dia, terminamos de detallar el grosor de las pistas y sus diferentes conexiones ademas de definir el grosor de lso pines. Empezamos a fabricar la placa y ocurrieron algunas complicaciones debido a que la impresion salio espejada por lo que hubo que rehacer la placa, corregir la impresion y empezar todo el proceso nuevamente, tuvimos un par de problemas con el metodo de transferencia termica.                         
+                    </h5>
+                    <h5 class="list" href="#">15/08/2022
+                        Terminamos la placa. hicomos los agujeros para los pines, soldamos los componentes de la placa con flux y la limpiamos con alcohol, regulamos el step down para que reduzca el voltaje nesesario y por ultimo conectamos los cables a los pines.                        
+                    </h5>
+                    <h5 class="list" href="#">5/09/2022
+                        Compramos los motores los sensores y los drivers para empezar a realizar pruebas con la placa, empezamos con el armado del chasis, cortamos a medida la base e hicimos los agujeros para los tornillos, por ultimo lijamos la base.                        
+                    </h5>
+                    <h5 class="list" href="#">19/09/2022
+                        Empezamos con el diseño 3D al cual la unica modificacion que se le realizo es la altura y  peso ya que la idea es que sea liviano para poder obtener mas lijereza y velocidad.El 1/10/2022 se termino con el diseño 3D.                         
+                    </h5>
+                    <h5 class="list" href="#">13/10/2022
+                        Comenzamos con la fabricacion de las ruedas del sumo las cuales estan echas de silicona, una vez tuvimos las ruedas probamos los motores y los drivers, funcionaron correctamente, realizamos pruebas en un protoboard con los sensores y tambien funcionaron solo falta probar el bluetooth. Terminamos de ensamblar el diseño 3D con el chasis y atornillamos los soportes de los motores y la placa.                         
+                    </h5>
+                    <h5 class="list" href="#">26/10/2022
+                        Se levanto una pista en la placa por lo que tuvimos que rehacerla, ademas hicimos el codigo (falta conseguir la bateria de litio).                        
+                    </h5> 
+                    <h5 class="list" href="#">
+                        09/11/2022
+                        Terminamos la parte de soldadura de la placa falta realizar las pruebas.
+                    </h5>
+                    </p>
+                    <a href="sumo rc.txt">Descarga el codigo RC</a>
+                    <a href="codigo fuente marvin.txt">Descarga el codigo AUTONOMO</a>
+                </div>
+                <img src="img/campain.png" alt="" class="imagen-about-us">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>mi mama no deja</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>no se no me acuerdo</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>TOP SECRET</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; FINISH</h2>
+    </footer>
+</body>
+
 </html>
